@@ -1,0 +1,15 @@
+<%= form_for(task) do |t| %>
+  <div>
+    <%= t.label :title, "Enter title of task" %>
+    <%= t.text_field :title, class: 'form-control' %>
+  </div>
+  <div>
+    <%= t.label :details, "Enter details" %>
+    <%= t.text_field :details %>
+  </div>
+  <div>
+    <%= t.label :completed, "it is completed?" %>
+    <%= t.check_box :completed %>
+  </div>
+  <%= t.submit %>
+<% end %>
